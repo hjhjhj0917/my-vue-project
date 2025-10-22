@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keydown Event</title>
+</head>
+<body>
+
+    <input type="text" id="inputBox" placeholder="클자를 입력해보세요" />
+    <div id="logArea"></div>
+
+    <script>
+        const inputBox = document.getElementById("InputBox");
+        const logArea = document.getElementById('logArea');
+
+        inputBox.addEventListener('keydown', (event) => {
+            logArea.textContent = `누른 키: ${event.key}`;
+        });
+    </script>
+
+</body>
+</html>
