@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouseover Event</title>
+    <style>
+        #hoverArea {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            line-height: 100px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="hoverArea">마우스를 올려보세요</div>
+    <p id="hoverStatus"></p>
+
+    <script>
+        const hoverArea = document.getElementById("hoverArea");
+        const hoverStatus = document.getElementById("hoverStatus");
+
+        hoverArea.addEventListener("mouseover", () => {
+            hoverStatus.innerText = "마우스가 영역 위에 있습니다";
+        });
+
+        hoverArea.addEventListener("mouseout", () => {
+            hoverStatus.innerText = "마우스가 영역을 벗어났습니다";
+        });
+    </script>
+
+</body>
+</html>

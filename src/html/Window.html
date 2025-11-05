@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load and Scroll Event</title>
+</head>
+<body>
+    <p>스크롤을 해보세요</p>
+    <script>
+        window.addEventListener("load", () => {
+            console.log("페이지가 모두 로드되었습니다");
+        });
+
+        window.addEventListener("scroll", () => {
+            console.log("스크롤 발생");
+        });
+    </script>
+
+    <div style="height: 2000px;"></div>
+</body>
+</html>
